@@ -1,0 +1,20 @@
+.header {
+  height: auto;
+}
+
+.header .title {
+  font-size: 40px;
+  color: silver;
+  margin-left: 20px;
+  line-height: 80px;
+}
+
+.divider {
+  height: 1px;
+  width: 100%;
+  background-color: #ddd;
+}
+
+.loginBtns {
+  margin: 3px;
+}
