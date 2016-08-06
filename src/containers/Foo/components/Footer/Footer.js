@@ -12,6 +12,11 @@ class Footer extends Component {
     return (
       <div className={style.footer}>
         <Row type="flex" justify="center" align="top">
+          <Col span={17}>
+            <div className={style.divider}></div>
+          </Col>
+        </Row>
+        <Row type="flex" justify="center" align="top">
           <Col span={7}>
             <div className={style.footerItem}>
               <p>四川城 成都市 高新区 天府五街中路 美年广场 C座 270-271号 StarKing Entertainment cor</p>

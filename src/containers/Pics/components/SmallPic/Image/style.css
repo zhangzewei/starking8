@@ -1,0 +1,16 @@
+.image img {
+  width: 10%;
+  display: block;
+  padding: 5px;
+  float: left;
+  cursor: pointer;
+}
+
+.imageActive img {
+  width: 10%;
+  display: block;
+  padding: 5px;
+  float: left;
+  cursor: pointer;
+  border: 3px solid red;
+}

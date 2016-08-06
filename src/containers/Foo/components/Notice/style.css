@@ -1,0 +1,17 @@
+.notice {
+  margin-top: 15px;
+}
+
+.divider {
+  height: 1px;
+  margin: 5px 0;
+  width: 100%;
+  background-color: #ddd;
+}
+
+.article {
+  background: #ddd;
+  height: 550px;
+  padding: 20px 15px;
+  overflow: auto;
+}

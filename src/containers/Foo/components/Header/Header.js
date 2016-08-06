@@ -2,6 +2,7 @@ import style from './style.css';
 
 import React, { Component, PropTypes } from 'react';
 import { Row, Col, Button, Menu } from 'antd';
+import { Link } from 'react-router';
 
 class Header extends Component {
   static propTypes = {
@@ -34,7 +35,10 @@ class Header extends Component {
           <Col span={18}>
             <Menu mode="horizontal">
               <Menu.Item>
-                Notice
+                <Link to="/">Home</Link>
+              </Menu.Item>
+              <Menu.Item>
+                <Link to="notice">Notice</Link>
               </Menu.Item>
               <SubMenu title={<span>Starking</span>}>
                 <MenuItemGroup>
@@ -48,7 +52,7 @@ class Header extends Component {
                 Audition
               </Menu.Item>
               <Menu.Item>
-                Challenger
+                <Link to="pics">Challenger</Link>
               </Menu.Item>
             </Menu>
           </Col>

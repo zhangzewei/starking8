@@ -1,7 +1,14 @@
 .footer {
-  margin-top: 20px;
+  margin: 20px 0;
 }
 
 .footerItem {
   margin: 0 5px;
+}
+
+.divider {
+  height: 1px;
+  margin-bottom: 5px;
+  width: 100%;
+  background-color: #ddd;
 }

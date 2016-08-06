@@ -9,7 +9,7 @@
     "test": "NODE_PATH=$NODE_PATH:$PWD/src mocha --compilers js:babel-core/register,js:babel-polyfill,css:test/css-null-compiler.js --recursive",
     "webpack:client-prod": "NODE_ENV=production webpack --config webpack/client.js --progress ",
     "dist": "npm run clean && npm run webpack:client-prod",
-    "start": "CLIENT_PORT=3000 NODE_ENV=development webpack-dev-server --inline --config webpack/client.js",
+    "start": "CLIENT_PORT=5000 NODE_ENV=development webpack-dev-server --inline --config webpack/client.js",
     "start:dist": "npm run dist && cp index.html dist/ && cd dist && open index.html",
     "precommit": "npm run check && npm test",
     "commitmsg": "node validate-commit-msg.js"

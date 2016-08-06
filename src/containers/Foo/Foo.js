@@ -3,10 +3,9 @@ import style from './style.css';
 import React, { Component, PropTypes } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { IndexRoute, Router, Route, hashHistory } from 'react-router';
 import * as FooActions from 'containers/Foo/actions';
+
 import Header from './components/Header';
-import Main from './components/Main';
 import Footer from './components/Footer';
 
 function mapStateToProps(state) {
@@ -25,6 +24,7 @@ class Foo extends Component {
   static propTypes = {
     foo: PropTypes.object.isRequired,
     fooActions: PropTypes.object.isRequired,
+    children: PropTypes.object,
   };
 
   static childContextTypes = {
@@ -41,11 +41,7 @@ class Foo extends Component {
     return (
       <div className={style.main}>
         <Header />
-        <Router history={hashHistory}>
-          <Route path="/" component={Main}>
-            <IndexRoute component={Main} />
-          </Route>
-        </Router>
+        {this.props.children}
         <Footer />
       </div>
     );
