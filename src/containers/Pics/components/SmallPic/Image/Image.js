@@ -19,13 +19,13 @@ class Image extends Component {
     const { handleClick } = this.props;
     if (this.props.id === index) {
       return (
-        <div className={style.imageActive} onClick={() => handleClick(index)}>
+        <div className={style.imageActive} onClick={() => handleClick(index, this.props.src)}>
           <img src={this.props.src} alt={index} title={index} />
         </div>
       );
     }
     return (
-      <div className={style.image} onClick={() => handleClick(index)}>
+      <div className={style.image} onClick={() => handleClick(index, this.props.src)}>
         <img src={this.props.src} alt={index} title={index} />
       </div>
     );

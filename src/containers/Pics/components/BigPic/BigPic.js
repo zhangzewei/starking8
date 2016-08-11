@@ -2,11 +2,13 @@
 import style from './style.css';
 
 import React, { Component, PropTypes } from 'react';
-import { Row, Col, Button } from 'antd';
+import { Link } from 'react-router';
+import { Row, Col } from 'antd';
 
 class BigPic extends Component {
   static propTypes = {
     style: PropTypes.string,
+    src: PropTypes.string,
   };
 
   static defaultProps = {
@@ -19,7 +21,7 @@ class BigPic extends Component {
         <Row type="flex" justify="center" align="top">
           <Col span={10}>
             <div className={style.image}>
-              <img src="./src/images/3.jpg" alt="3.jpg" />
+              <img src={this.props.src} alt="3.jpg" />
             </div>
           </Col>
           <Col span={14}>
@@ -29,9 +31,7 @@ class BigPic extends Component {
               <Col span={22}>Hooby: xxx</Col>
               <Col span={22}>Another: xxx</Col>
               <Col span={22}>Another: xxx</Col>
-              <Col className={style.btn} span={22}>
-                <Button type="primary" size="large">Know More</Button>
-              </Col>
+              <Link className={style.btn} to="detail">Know More</Link>
             </div>
           </Col>
         </Row>

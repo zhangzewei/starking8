@@ -54,6 +54,9 @@ class Header extends Component {
               <Menu.Item>
                 <Link to="pics">Challenger</Link>
               </Menu.Item>
+              <Menu.Item>
+                <Link to="rank">Rank</Link>
+              </Menu.Item>
             </Menu>
           </Col>
         </Row>

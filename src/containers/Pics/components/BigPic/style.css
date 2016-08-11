@@ -5,7 +5,19 @@
 }
 
 .btn {
-  margin: 10px 0;
+  margin-top: 10px;
+  float: left;
+  display: block;
+  padding: 7px 15px;
+  font-size: 14px;
+  border-radius: 6px;
+  background-color: #2db7f5;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #57c5f7;
+  color: #fff;
 }
 
 .details {

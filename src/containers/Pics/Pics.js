@@ -35,15 +35,15 @@ class Pics extends Component {
 
   render() {
     const { state } = this.props;
-    console.log(state);
+    console.log(this.props);
     return (
       <div className={style.div}>
         <Row type="flex" justify="center" align="middle">
           <Col span={8}>
-            <BigPic />
+            <BigPic src={state.info.src} />
           </Col>
           <Col span={8}>
-            <SmallPic id={state.id} handleClick={actions.clickImage} />
+            <SmallPic id={state.info.id} handleClick={this.props.actions.clickImage} />
           </Col>
         </Row>
       </div>

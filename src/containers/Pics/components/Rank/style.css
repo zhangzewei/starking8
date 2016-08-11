@@ -1,0 +1,10 @@
+.notice {
+  margin-top: 15px;
+}
+
+.divider {
+  height: 1px;
+  margin: 5px 0;
+  width: 100%;
+  background-color: #ddd;
+}
