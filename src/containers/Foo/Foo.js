@@ -22,20 +22,10 @@ function mapDispatchToProps(dispatch) {
 @connect(mapStateToProps, mapDispatchToProps)
 class Foo extends Component {
   static propTypes = {
-    foo: PropTypes.object.isRequired,
-    fooActions: PropTypes.object.isRequired,
-    children: PropTypes.object,
+    children: PropTypes.object.isRequired,
   };
 
-  static childContextTypes = {
-    foo: PropTypes.object,
-    fooActions: PropTypes.object,
-  };
-
-  getChildContext() {
-    const { foo, fooActions } = this.props;
-    return { foo, fooActions };
-  }
+  static defaultProps = {};
 
   render() {
     return (

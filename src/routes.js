@@ -7,6 +7,8 @@ import Notice from './containers/Foo/components/Notice/';
 import Pics from './containers/Pics';
 import Detail from './containers/Pics/components/Detail/';
 import Rank from './containers/Pics/components/Rank/';
+import SignUp from './containers/Pics/components/SignUp/';
+import Login from './containers/Pics/components/Login/';
 
 export function createRoutes() {
   return {
@@ -18,6 +20,8 @@ export function createRoutes() {
       { path: 'pics', component: Pics },
       { path: 'detail', component: Detail },
       { path: 'rank', component: Rank },
+      { path: 'signup', component: SignUp },
+      { path: 'login', component: Login },
     ],
   };
 }

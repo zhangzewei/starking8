@@ -1,0 +1,17 @@
+.fromGroup {
+  padding: 10px;
+  min-height: 30px;
+  width: 100%;
+  clear: both;
+}
+
+.fromGroup label {
+  float: left;
+  cursor: pointer;
+  margin: 0 10px;
+  line-height: 30px;
+}
+
+.fromGroup div {
+  float: left;
+}

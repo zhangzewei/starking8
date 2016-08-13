@@ -1,14 +1,11 @@
 import style from './style.css';
 
-import React, { Component, PropTypes } from 'react';
-import { Row, Col, Button, Menu } from 'antd';
+import React, { Component } from 'react';
+import { Row, Col, Menu } from 'antd';
 import { Link } from 'react-router';
 
 class Header extends Component {
-  static propTypes = {
-    style: PropTypes.string,
-    className: PropTypes.string,
-  };
+  static propTypes = {};
 
   static defaultProps = { };
 
@@ -22,8 +19,8 @@ class Header extends Component {
             <span className={style.title}>Logo</span>
           </Col>
           <Col offset={8}>
-            <Button className={style.loginBtns} type="primary" size="large">登录</Button>
-            <Button className={style.loginBtns} type="primary" size="large">注册</Button>
+            <Link className={style.btn} to="login">登录</Link>
+            <Link className={style.btn} to="login">注册</Link>
           </Col>
         </Row>
         <Row type="flex" justify="center" align="middle">
@@ -42,7 +39,9 @@ class Header extends Component {
               </Menu.Item>
               <SubMenu title={<span>Starking</span>}>
                 <MenuItemGroup>
-                  <Menu.Item key="setting:1">选项1</Menu.Item>
+                  <Menu.Item key="setting:1">
+                    <Link to="signup">报名</Link>
+                  </Menu.Item>
                   <Menu.Item key="setting:2">选项2</Menu.Item>
                   <Menu.Item key="setting:3">选项3</Menu.Item>
                   <Menu.Item key="setting:4">选项4</Menu.Item>
