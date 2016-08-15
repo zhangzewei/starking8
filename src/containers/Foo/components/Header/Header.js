@@ -40,7 +40,7 @@ class Header extends Component {
               <SubMenu title={<span>Starking</span>}>
                 <MenuItemGroup>
                   <Menu.Item key="setting:1">
-                    <Link to="signup">报名</Link>
+                    sssss
                   </Menu.Item>
                   <Menu.Item key="setting:2">选项2</Menu.Item>
                   <Menu.Item key="setting:3">选项3</Menu.Item>
@@ -48,7 +48,7 @@ class Header extends Component {
                 </MenuItemGroup>
               </SubMenu>
               <Menu.Item>
-                Audition
+                <Link to="signup">Audition</Link>
               </Menu.Item>
               <Menu.Item>
                 <Link to="pics">Challenger</Link>
