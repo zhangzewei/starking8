@@ -37,7 +37,7 @@ class Rank extends Component {
     for (let i = 0; i < 46; i++) {
       data.push({
         key: i + 1,
-        src: './src/images/1.jpg',
+        src: '../src/images/1.jpg',
         name: `李大嘴${i}`,
         votes: 32,
       });

@@ -9,6 +9,7 @@ import Detail from './containers/Pics/components/Detail/';
 import Rank from './containers/Pics/components/Rank/';
 import SignUp from './containers/Pics/components/SignUp/';
 import Login from './containers/Pics/components/Login/';
+import Customer from './containers/Foo/components/CustomerCenter/';
 
 export function createRoutes() {
   return {
@@ -16,12 +17,13 @@ export function createRoutes() {
     component: Foo,
     indexRoute: { component: Main },
     childRoutes: [
-      { path: 'notice', component: Notice },
       { path: 'pics', component: Pics },
       { path: 'detail', component: Detail },
       { path: 'rank', component: Rank },
       { path: 'signup', component: SignUp },
       { path: 'login', component: Login },
+      { path: 'customer/:id', component: Customer },
+      { path: 'notice/:name/:id', component: Notice },
     ],
   };
 }

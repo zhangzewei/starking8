@@ -25,8 +25,6 @@ class Footer extends Component {
           </Col>
           <Col span={7}>
             <div className={style.footerItem}>
-              <p>TEL：13668158653（高主任）18380458527（刘老师）15608072971（杨老师）</p>
-              <p>15756289858（毛老师）15908165270（尹老师）</p>
               <p>Email：hwangjeakan@naver.com</p>
               <p>Wechat：hwangjeakan</p>
             </div>

@@ -16,7 +16,7 @@ class Header extends Component {
       <div className={style.header}>
         <Row type="flex" justify="center" align="middle">
           <Col span={8}>
-            <span className={style.title}>Logo</span>
+            <a href="#"><img className={style.title} src="../src/images/logo.jpg" alt="logo" /></a>
           </Col>
           <Col offset={8}>
             <Link className={style.btn} to="login">登录</Link>
@@ -35,16 +35,22 @@ class Header extends Component {
                 <Link to="/">Home</Link>
               </Menu.Item>
               <Menu.Item>
-                <Link to="notice">Notice</Link>
+                <Link to="notice/Notice/1">Notice</Link>
               </Menu.Item>
               <SubMenu title={<span>Starking</span>}>
                 <MenuItemGroup>
                   <Menu.Item key="setting:1">
-                    sssss
+                    <Link to="notice/Starking/About">About</Link>
                   </Menu.Item>
-                  <Menu.Item key="setting:2">选项2</Menu.Item>
-                  <Menu.Item key="setting:3">选项3</Menu.Item>
-                  <Menu.Item key="setting:4">选项4</Menu.Item>
+                  <Menu.Item key="setting:2">
+                    <Link to="notice/Starking/Recruit">Recruit</Link>
+                  </Menu.Item>
+                  <Menu.Item key="setting:3">
+                    <Link to="customer/1">Customer Center</Link>
+                  </Menu.Item>
+                  <Menu.Item key="setting:4">
+                    <Link to="notice/Starking/Contact">Contact Us</Link>
+                  </Menu.Item>
                 </MenuItemGroup>
               </SubMenu>
               <Menu.Item>

@@ -11,7 +11,6 @@ import BigPic from './components/BigPic';
 import SmallPic from './components/SmallPic';
 
 function mapStateToProps(state) {
-  console.log(state);
   return {
     state: state.pics.toJS(),
   };
@@ -35,7 +34,6 @@ class Pics extends Component {
 
   render() {
     const { state } = this.props;
-    console.log(this.props);
     return (
       <div className={style.div}>
         <Row type="flex" justify="center" align="middle">

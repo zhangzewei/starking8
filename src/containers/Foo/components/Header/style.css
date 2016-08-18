@@ -2,11 +2,12 @@
   height: auto;
 }
 
-.header .title {
-  font-size: 40px;
+.header a .title {
   color: silver;
   margin-left: 20px;
   line-height: 80px;
+  padding: 5px 0;
+  width: 90px;
 }
 
 .divider {

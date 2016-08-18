@@ -4,7 +4,7 @@ import immutable from 'immutable';
 const initialState = immutable.fromJS({
   info: {
     id: 0,
-    src: './src/images/1.jpg',
+    src: '../src/images/1.jpg',
   },
 });
 

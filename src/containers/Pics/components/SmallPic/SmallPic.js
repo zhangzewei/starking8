@@ -19,10 +19,10 @@ class SmallPic extends Component {
     super(props, context);
     this.state = {
       images: [
-        { src: './src/images/1.jpg' },
-        { src: './src/images/2.jpg' },
-        { src: './src/images/3.jpg' },
-        { src: './src/images/4.jpg' },
+        { src: '../src/images/1.jpg' },
+        { src: '../src/images/2.jpg' },
+        { src: '../src/images/3.jpg' },
+        { src: '../src/images/4.jpg' },
       ],
     };
   }

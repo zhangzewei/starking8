@@ -16,17 +16,17 @@ class Main extends Component {
             <Carousel className={style.carousel} effect="fade" autoplay>
               <div>
                 <a href="#!">
-                  <img src="./src/images/demo1.jpg" alt="demo1" />
+                  <img src="../src/images/demo1.jpg" alt="demo1" />
                 </a>
               </div>
               <div>
                 <a href="#!">
-                  <img src="./src/images/demo2.jpg" alt="demo2" />
+                  <img src="../src/images/demo2.jpg" alt="demo2" />
                 </a>
               </div>
               <div>
                 <a href="#!">
-                  <img src="./src/images/demo3.jpg" alt="demo3" />
+                  <img src="../src/images/demo3.jpg" alt="demo3" />
                 </a>
               </div>
             </Carousel>

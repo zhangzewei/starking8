@@ -52,7 +52,7 @@ class Detail extends Component {
               <h3 className={style.title}>Details</h3>
               <Col span={8}>
                 <div className={style.image}>
-                  <img src="./src/images/1.jpg" alt="3.jpg" />
+                  <img src="../src/images/1.jpg" alt="3.jpg" />
                 </div>
               </Col>
               <Col span={16}>
@@ -101,22 +101,22 @@ class Detail extends Component {
               <Col span={24}>
                 <Col span={3}>
                   <div className={style.images}>
-                    <img onClick={this.showModal} src="./src/images/1.jpg" alt="3.jpg" />
+                    <img onClick={this.showModal} src="../src/images/1.jpg" alt="3.jpg" />
                   </div>
                 </Col>
                 <Col span={3}>
                   <div className={style.images}>
-                    <img onClick={this.showModal} src="./src/images/2.jpg" alt="3.jpg" />
+                    <img onClick={this.showModal} src="../src/images/2.jpg" alt="3.jpg" />
                   </div>
                 </Col>
                 <Col span={3}>
                   <div className={style.images}>
-                    <img onClick={this.showModal} src="./src/images/3.jpg" alt="3.jpg" />
+                    <img onClick={this.showModal} src="../src/images/3.jpg" alt="3.jpg" />
                   </div>
                 </Col>
                 <Col span={3}>
                   <div className={style.images}>
-                    <img onClick={this.showModal} src="./src/images/4.jpg" alt="3.jpg" />
+                    <img onClick={this.showModal} src="../src/images/4.jpg" alt="3.jpg" />
                   </div>
                 </Col>
               </Col>
