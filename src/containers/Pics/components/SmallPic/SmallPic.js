@@ -17,7 +17,11 @@ class SmallPic extends Component {
 
   constructor(props, context) {
     super(props, context);
-    this.state = {
+    this.state = {};
+  }
+
+  render() {
+    const imgs = {
       images: [
         { src: '../src/images/1.jpg' },
         { src: '../src/images/2.jpg' },
@@ -25,10 +29,12 @@ class SmallPic extends Component {
         { src: '../src/images/4.jpg' },
       ],
     };
-  }
-
-  render() {
-    const images = this.state.images.map((image, index) => (
+    const imagesNum = imgs.images.length;
+    for (let i = 0; i < 100 - imagesNum; i++) {
+      console.log(imgs.images.length);
+      imgs.images.push({ src: '' });
+    }
+    const images = imgs.images.map((image, index) => (
       <Image
         src={image.src}
         key={index}

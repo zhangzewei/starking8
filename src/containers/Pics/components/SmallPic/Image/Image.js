@@ -39,8 +39,8 @@ class Image extends Component {
       );
     }
     return (
-      <div>
-        数据加载中...
+      <div className={style.image}>
+        {imageInfo.index + 1}
       </div>
     );
   }

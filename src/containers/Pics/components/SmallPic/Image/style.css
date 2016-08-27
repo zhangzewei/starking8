@@ -1,16 +1,38 @@
-.image img {
+.image {
+  border: 2px solid #ddd;
   width: 10%;
+  height: 60px;
+  float: left;
+  overflow: hidden;
   display: block;
-  padding: 5px;
+  text-align: center;
+  line-height: 58px;
+  font-size: 26px;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 1px;
   float: left;
   cursor: pointer;
 }
 
-.imageActive img {
+.imageActive {
   width: 10%;
+  height: 60px;
+  float: left;
+  overflow: hidden;
   display: block;
-  padding: 5px;
+  border: 2px solid red;
+}
+
+.imageActive img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 1px;
   float: left;
   cursor: pointer;
-  border: 3px solid red;
 }
