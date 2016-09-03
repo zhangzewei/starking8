@@ -15,3 +15,11 @@
 .fromGroup div {
   float: left;
 }
+
+.title {
+  width: 100%;
+  margin: 10px auto;
+  padding-left: 1em;
+  font-size: 18px;
+  font-weight: bold;
+}

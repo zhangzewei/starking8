@@ -46,7 +46,7 @@ class SmallPic extends Component {
     return (
       <div className={style.smallpic}>
         <Row type="flex" justify="center" align="top">
-          <Col span={24}>
+          <Col span={20}>
             {images}
           </Col>
         </Row>

@@ -19,12 +19,12 @@ class BigPic extends Component {
     return (
       <div className={style.bigpic}>
         <Row type="flex" justify="center" align="top">
-          <Col span={10}>
+          <Col span={18}>
             <div className={style.image}>
               <img src={this.props.src} alt="3.jpg" />
             </div>
           </Col>
-          <Col span={14}>
+          <Col span={6}>
             <div className={style.details}>
               <Col span={22}>Name: xxx</Col>
               <Col span={22}>Age: xxx</Col>

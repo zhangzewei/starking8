@@ -84,7 +84,7 @@ Wechat : hwangjeakan	   QQ : starking8
   {
     name: 'Recruit',
     id: 'Recruit',
-    text: '<p>Recruit</p>',
+    text: '',
   },
   {
     id: 'Customer',

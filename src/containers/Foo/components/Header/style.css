@@ -1,5 +1,6 @@
 .header {
   height: auto;
+  position: relative;
 }
 
 .header a .title {
@@ -10,27 +11,37 @@
   width: 90px;
 }
 
+.nav {
+  position: relative;
+}
+
 .divider {
   height: 1px;
   width: 100%;
   background-color: #ddd;
 }
 
-.loginBtns {
-  margin: 3px;
-}
-
 .btn {
   margin: 2px;
   display: inline-block;
-  padding: 7px 15px;
-  font-size: 14px;
-  border-radius: 6px;
-  background-color: #2db7f5;
-  color: #fff;
+  font-size: 10px;
+  color: #000;
 }
 
 .btn:hover {
-  background-color: #57c5f7;
-  color: #fff;
+  color: #2db7f5;
+}
+
+.menu {
+  line-height: 97px;
+}
+
+.menu_a {
+  font-size: 20px;
+}
+
+.login {
+  position: absolute;
+  top: 2px;
+  right: 10px;
 }

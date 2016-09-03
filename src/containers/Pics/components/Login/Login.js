@@ -18,9 +18,10 @@ class Login extends Component {
         <Row type="flex" justify="center" align="middle">
           <Col span={5}>
             <Tabs defaultActiveKey="1">
-              <TabPane tab="选项卡一" key="1">
+              <TabPane tab="登录" key="1">
                 <Row type="flex" justify="center" align="middle">
                   <Col span={22}>
+                    <p className={style.title}>登录</p>
                     <div className={style.fromGroup}>
                       <label htmlFor="count">账号：</label>
                       <div>
@@ -39,9 +40,10 @@ class Login extends Component {
                   </Col>
                 </Row>
               </TabPane>
-              <TabPane tab="选项卡二" key="2">
+              <TabPane tab="注册" key="2">
                 <Row type="flex" justify="center" align="middle">
                   <Col span={22}>
+                    <p className={style.title}>注册</p>
                     <div className={style.fromGroup}>
                       <label htmlFor="regcnt">账号：</label>
                       <div>

@@ -58,7 +58,7 @@ class Rank extends Component {
       <div className={style.notice}>
         <Row type="flex" justify="center" align="top">
           <Col span={17}>
-            <Table columns={columns} dataSource={data} pagination={pagination} />
+            <Table columns={columns} dataSource={data} pagination={pagination} size="small" />
           </Col>
         </Row>
       </div>
