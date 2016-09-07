@@ -10,7 +10,7 @@
 }
 
 .article {
-  background: #ddd;
+  background: rgb(244, 244, 244);
   height: 550px;
   padding: 20px 15px;
   overflow: auto;

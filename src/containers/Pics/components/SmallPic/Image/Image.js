@@ -1,12 +1,8 @@
-
-import style from './style.css';
-
 import React, { Component, PropTypes } from 'react';
 
 
 class Image extends Component {
   static propTypes = {
-    style: PropTypes.string,
     src: PropTypes.string.isRequired,
     id: PropTypes.number,
     handleClick: PropTypes.func.isRequired,
@@ -19,13 +15,13 @@ class Image extends Component {
     const { handleClick } = this.props;
     if (this.props.id === index) {
       return (
-        <div className={style.imageActive} onClick={() => handleClick(index, this.props.src)}>
+        <div className="image imageActive" onClick={() => handleClick(index, this.props.src)}>
           <img src={this.props.src} alt={index} title={index} />
         </div>
       );
     }
     return (
-      <div className={style.image} onClick={() => handleClick(index, this.props.src)}>
+      <div className="image" onClick={() => handleClick(index, this.props.src)}>
         <img src={this.props.src} alt={index} title={index} />
       </div>
     );
@@ -39,7 +35,7 @@ class Image extends Component {
       );
     }
     return (
-      <div className={style.image}>
+      <div className="image">
         {imageInfo.index + 1}
       </div>
     );

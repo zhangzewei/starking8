@@ -14,19 +14,23 @@ class Footer extends Component {
         <Row type="flex" justify="center" align="top">
           <Col span={17}>
             <div className={style.divider}></div>
-          </Col>
-        </Row>
-        <Row type="flex" justify="center" align="top">
-          <Col span={7}>
-            <div className={style.footerItem}>
-              <p>&copy;2016 成都斯塔星教育文化有限公司 StarKing Entertainment.</p>
-            </div>
-          </Col>
-          <Col span={7}>
-            <div className={style.footerItem}>
-              <p>Email：hwangjeakan@naver.com</p>
-              <p>Wechat：hwangjeakan</p>
-            </div>
+            <Row type="flex" justify="left" align="top">
+              <Col span={3}>
+                <img className={style.logo} src="../src/images/logo.jpg" alt="logo" />
+              </Col>
+              <Col span={10}>
+                <div className={style.footerItem}>
+                  <p className={style.tel}>(028) 6500 9311</p>
+                </div>
+              </Col>
+              <Col span={10}>
+                <div className={style.footerItem}>
+                  <p>Email：hwangjeakan@naver.com</p>
+                  <p>Address：成都高新区天府五街中路美年广场 C270-271</p>
+                  <p>&copy;2016 韩国斯塔星文化传媒有限公司 StarKing Entertainment corp.,</p>
+                </div>
+              </Col>
+            </Row>
           </Col>
         </Row>
       </div>

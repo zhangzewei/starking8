@@ -23,9 +23,6 @@ class Header extends Component {
             </Col>
             <Menu mode="horizontal" className={style.menu}>
               <Menu.Item>
-                <Link className={style.menu_a} to="/">Home</Link>
-              </Menu.Item>
-              <Menu.Item>
                 <Link className={style.menu_a} to="notice/Notice/1">Notice</Link>
               </Menu.Item>
               <SubMenu className={style.menu_a} title={<span>Starking</span>}>

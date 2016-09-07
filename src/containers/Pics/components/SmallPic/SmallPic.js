@@ -18,7 +18,18 @@ class SmallPic extends Component {
   constructor(props, context) {
     super(props, context);
     this.state = {};
+    // this.fuck = this.fuck.bind(this);
   }
+
+  // componentDidMount() {
+  //   this.fuck();
+  // }
+  //
+  // fuck() {
+  //   const imagesContainer = document.getElementById('images');
+  //   const imageWidth = document.querySelector('.image').offsetWidth;
+  //   const images = imagesContainer.childNodes;
+  // }
 
   render() {
     const imgs = {
@@ -46,7 +57,7 @@ class SmallPic extends Component {
     return (
       <div className={style.smallpic}>
         <Row type="flex" justify="center" align="top">
-          <Col span={20}>
+          <Col span={20} id="images">
             {images}
           </Col>
         </Row>
