@@ -21,6 +21,7 @@ node_modules
 # Bower
 bower_components/
 dist
+*.zip
 
 # WebStorm文件
 *.idea/

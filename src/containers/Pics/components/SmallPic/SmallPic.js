@@ -18,18 +18,21 @@ class SmallPic extends Component {
   constructor(props, context) {
     super(props, context);
     this.state = {};
-    // this.fuck = this.fuck.bind(this);
+    this.changeImageHeight = this.changeImageHeight.bind(this);
   }
 
-  // componentDidMount() {
-  //   this.fuck();
-  // }
-  //
-  // fuck() {
-  //   const imagesContainer = document.getElementById('images');
-  //   const imageWidth = document.querySelector('.image').offsetWidth;
-  //   const images = imagesContainer.childNodes;
-  // }
+  componentDidMount() {
+    this.changeImageHeight();
+  }
+
+  changeImageHeight() {
+    const imagesContainer = document.getElementById('images');
+    const imageWidth = document.querySelector('.image').offsetWidth;
+    const images = imagesContainer.childNodes;
+    for (let i = 0; i < images.length; i++) {
+      images[i].style.height = `${imageWidth}px`;
+    }
+  }
 
   render() {
     const imgs = {
@@ -42,7 +45,6 @@ class SmallPic extends Component {
     };
     const imagesNum = imgs.images.length;
     for (let i = 0; i < 100 - imagesNum; i++) {
-      console.log(imgs.images.length);
       imgs.images.push({ src: '' });
     }
     const images = imgs.images.map((image, index) => (
